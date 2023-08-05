@@ -1,4 +1,4 @@
-package com.github.ldhai99.easyTransaction;
+package io.github.ldhai99.easyTransaction;
 
 public interface EventListener {
 

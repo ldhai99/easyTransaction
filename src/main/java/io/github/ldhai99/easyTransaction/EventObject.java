@@ -1,4 +1,4 @@
-package com.github.ldhai99.easyTransaction;
+package io.github.ldhai99.easyTransaction;
 
 import javax.sql.DataSource;
 import java.sql.Connection;

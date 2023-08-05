@@ -1,9 +1,6 @@
-package com.github.ldhai99.easyTransaction;
+package io.github.ldhai99.easyTransaction;
 
 
-
-import com.github.ldhai99.easyTransaction.EventListener;
-import com.github.ldhai99.easyTransaction.EventObject;
 
 import javax.sql.DataSource;
 import java.sql.Connection;

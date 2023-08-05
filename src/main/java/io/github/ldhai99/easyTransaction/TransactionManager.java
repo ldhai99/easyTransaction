@@ -1,11 +1,10 @@
-package com.github.ldhai99.easyTransaction;
+package io.github.ldhai99.easyTransaction;
 
 
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
-import java.util.Map;
 
 public class TransactionManager extends EventManager {
     private DataSource ds;

@@ -1,4 +1,4 @@
-package com.github.ldhai99.easyTransaction;
+package io.github.ldhai99.easyTransaction;
 
 import java.util.*;
 
@@ -6,7 +6,7 @@ public abstract class EventManager {
 
 
     protected Map<String, LinkedList<EventListener>> eventListenerMap = new HashMap<String, LinkedList<EventListener>>();
-    EventObject event;
+    io.github.ldhai99.easyTransaction.EventObject event;
 
     // 构成函数
     public EventManager() {
@@ -15,7 +15,7 @@ public abstract class EventManager {
 
     //触发缺省事件
     public boolean handle() {
-        return handle(new EventObject());
+        return handle(new io.github.ldhai99.easyTransaction.EventObject());
     }
 
     // 触发事件处理
