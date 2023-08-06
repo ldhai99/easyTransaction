@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.ldhai99</groupId>
     <artifactId>easyTransaction</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -44,11 +46,10 @@
         <!-- 用于发布的链接，用 HTTPS-->
         <connection>scm:git:git://github.com/ldhai99/easyTransaction.git</connection>
         <!-- 用于指定开发者的链接，用HTTPS-->
-        <developerConnection>scm:git:ssh://github.com/ldhai99/easyTransaction.git</developerConnection>
+        <developerConnection>scm:git:ssh://git@github.com:ldhai99/easyTransaction.git</developerConnection>
         <!-- #git项目浏览器里的地址-->
         <url>https://github.com/ldhai99/easyTransaction</url>
-      <tag>v0.0.1</tag>
-  </scm>
+    </scm>
 
     <profiles>
         <profile>
