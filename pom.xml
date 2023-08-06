@@ -46,9 +46,9 @@
         <!-- 用于发布的链接，用 HTTPS-->
         <connection>scm:git:git://github.com/ldhai99/easyTransaction.git</connection>
         <!-- 用于指定开发者的链接，用HTTPS-->
-        <developerConnection>scm:git:ssh://github.com/ldhai99/easyTransaction.git</developerConnection>
+        <developerConnection>scm:git:ssh://github.com:ldhai99/easyTransaction.git</developerConnection>
         <!-- #git项目浏览器里的地址-->
-        <url>https://github.com/ldhai99/easyTransaction</url>
+        <url>http://github.com/ldhai99/easyTransaction</url>
     </scm>
 
     <profiles>
