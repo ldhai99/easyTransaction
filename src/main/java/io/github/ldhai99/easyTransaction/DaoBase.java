@@ -11,7 +11,7 @@ public abstract class DaoBase implements EventListener {
 
     public DataSource ds;
     public  Connection con;
-    public EventObject event;
+    public TransManager trans;
 
 
     //处理需要的参数para及处理结果result
@@ -22,7 +22,7 @@ public abstract class DaoBase implements EventListener {
     }
 
     //回调处理分为三个步骤
-    public boolean callback(EventObject event) throws Exception {
+    public boolean callback(TransManager event) throws Exception {
 
         if (!this.initHandle( event)) {
             return false;
@@ -38,9 +38,9 @@ public abstract class DaoBase implements EventListener {
         }
         return true;
     }
-    public  boolean initHandle(EventObject event) throws SQLException, Exception {
+    public  boolean initHandle(TransManager trans) throws SQLException, Exception {
         // 变成服务事件参数
-        this.event =  event;
+        this.trans =  trans;
 
         setParameters();
         return true;
@@ -57,27 +57,27 @@ public abstract class DaoBase implements EventListener {
     public void setParameters() {
 
         //event事件传过来的数据源与连接
-        this.ds = event.ds;
-        this.con = event.con;
+        this.ds = trans.ds;
+        this.con = trans.con;
 
         //event事件传过来的入参与返回结果
-        this.para = event.para;
-        this.result = event.result;
+        this.para = trans.para;
+        this.result = trans.result;
 
     }
     public void saveResult(String name,Object value){
-        event.saveResult(name,value);
+        trans.saveResult(name,value);
     }
 
     public Object getResult(String name){
-        return event.getResult(name);
+        return trans.getResult(name);
     }
     public void savePara(String name,Object value){
-        event.savePara(name,value);
+        trans.savePara(name,value);
     }
 
     public Object getPara(String name){
-        return event.getPara(name);
+        return trans.getPara(name);
     }
 
 }

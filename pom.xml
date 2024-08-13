@@ -58,7 +58,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <build>
-                <!--发布到中央SNAPSHOT仓库插件-->
+
                 <plugins>
 
                     <plugin>
